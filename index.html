@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/favicon-64.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- Cloudflare Turnstile -->
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onTurnstileLoad" async defer></script>
+  <script>
+    function onTurnstileLoad() {
+      window._turnstileReady = true;
+      window.dispatchEvent(new Event('turnstile-ready'));
+    }
+  </script>
+
+  <!-- Web App / PWA -->
+  <meta name="theme-color" content="#0b060d" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Kangflix" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/manifest.json" />
+
+  <!-- Primary SEO -->
+  <title>Kangflix — Free Movie &amp; TV Show Streaming | Watch Online</title>
+  <meta name="description"
+    content="Kangflix is a free streaming platform to watch movies and TV shows online. Discover trending titles, browse by genre, and stream instantly — no sign-up required." />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="keywords"
+    content="kangflix, Kangflix, free streaming, watch movies online, watch TV shows online, free movie streaming, trending movies, best TV series, Kangflix app" />
+  <meta name="author" content="Kangflix" />
+  <meta name="application-name" content="Kangflix" />
+  <link rel="canonical" href="https://kangflix.vercel.app/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Kangflix" />
+  <meta property="og:url" content="https://kangflix.vercel.app/" />
+  <meta property="og:title" content="Kangflix — Free Movie &amp; TV Show Streaming" />
+  <meta property="og:description"
+    content="Kangflix is a free streaming platform. Watch movies and TV shows online instantly — no subscription needed." />
+  <meta property="og:image" content="https://kangflix.vercel.app/og-image.png" />
+  <meta property="og:image:alt" content="Kangflix — Free Movie &amp; TV Show Streaming" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Kangflix — Free Movie &amp; TV Show Streaming" />
+  <meta name="twitter:description"
+    content="Kangflix is a free streaming platform. Watch movies and TV shows online instantly — no subscription needed." />
+  <meta name="twitter:image" content="https://kangflix.vercel.app/og-image.png" />
+  <meta name="twitter:image:alt" content="Kangflix — Free Movie &amp; TV Show Streaming" />
+
+  <!-- JSON-LD: WebSite schema with Sitelinks Searchbox -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": "https://kangflix.vercel.app/#website",
+      "name": "Kangflix",
+      "alternateName": ["Kangflix App", "kangflix"],
+      "url": "https://kangflix.vercel.app/",
+      "description": "Kangflix is a free online streaming platform to watch movies and TV shows instantly.",
+      "inLanguage": "en-US",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://kangflix.vercel.app/search?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
+  <!-- JSON-LD: Organization (Brand Entity) -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "@id": "https://kangflix.vercel.app/#organization",
+      "name": "Kangflix",
+      "alternateName": "Kangflix App",
+      "url": "https://kangflix.vercel.app/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://kangflix.vercel.app/logo.png",
+        "width": 512,
+        "height": 512
+      },
+      "description": "Kangflix is a free streaming platform where you can watch movies and TV shows online without a subscription.",
+      "sameAs": [
+        "https://kangflix.vercel.app"
+      ]
+    }
+    </script>
+
+  <!-- JSON-LD: WebApplication (Product Entity) -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "@id": "https://kangflix.vercel.app/#webapp",
+      "name": "Kangflix",
+      "alternateName": ["Kangflix App", "kangflix streaming"],
+      "url": "https://kangflix.vercel.app/",
+      "applicationCategory": "EntertainmentApplication",
+      "operatingSystem": "Web, Android, iOS",
+      "browserRequirements": "Requires JavaScript",
+      "description": "Kangflix lets you stream movies and TV shows for free online. Browse thousands of titles by genre and watch instantly — no account required.",
+      "screenshot": "https://kangflix.vercel.app/og-image.png",
+      "featureList": "Free streaming, No subscription, Movies, TV Shows, Anime, K-Drama, Search, Genre browsing",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "publisher": {
+        "@id": "https://kangflix.vercel.app/#organization"
+      }
+    }
+    </script>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-H670PNW2CH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-H670PNW2CH');
+  </script>
+  <meta name='dmca-site-verification' content='NnVjSnA3ZGtacC9vVGJ2K1d6SHQvdz090' />
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+  <!-- DMCA Badge Helper -->
+  <script src="//images.dmca.com/Badges/DMCABadgeHelper.min.js"></script>
+</body>
+</html>
